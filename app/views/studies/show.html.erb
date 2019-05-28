@@ -1,0 +1,12 @@
+<h1>Study</h1>
+
+
+
+
+
+
+
+
+<%= form_tag study_path(@study.id), method: "delete" do %>
+  <%= submit_tag "Delete #{@study.name}" %>
+<% end %> 

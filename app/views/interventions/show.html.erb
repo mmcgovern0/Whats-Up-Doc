@@ -1,0 +1,19 @@
+<h1>Intervention</h1>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<%= form_tag intervention_path(@intervention.id), method: "delete" do %>
+  <%= submit_tag "Delete #{@intervention.name}" %>
+<% end %> 
