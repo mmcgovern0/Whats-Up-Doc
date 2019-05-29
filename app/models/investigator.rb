@@ -1,4 +1,3 @@
 class Investigator < ApplicationRecord
-	has_many :investigator_studies
-	has_many :studies, through: :investigator_studies
+  has_and_belongs_to_many :studies
 end

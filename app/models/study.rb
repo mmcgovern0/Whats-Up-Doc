@@ -1,5 +1,6 @@
 class Study < ApplicationRecord
-	belongs_to :condition
-	has_many :study_interventions
-	has_many :interventions, through: :study_interventions
+  belongs_to :sponsor
+  has_and_belongs_to_many :investigators
+  has_and_belongs_to_many :interventions
+  has_and_belongs_to_many :conditions
 end
